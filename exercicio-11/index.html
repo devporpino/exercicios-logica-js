@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escalação do Time</title>
+  <script src="./index.js"></script> <!-- Importa o arquivo JavaScript -->
+</head>
+<body>
+  <h1>Escalação do Time</h1>
+
+  <!-- Formulário para escalar um jogador -->
+  <h2>Escalar Jogador</h2>
+  <p>
+    <label for="position">Posição:</label>
+    <input type="text" id="position"> <!-- Input para a posição do jogador -->
+    
+    <label for="name">Nome:</label>
+    <input type="text" id="name"> <!-- Input para o nome do jogador -->
+
+    <label for="number">Número:</label>
+    <input type="number" id="number"> <!-- Input para o número da camisa do jogador -->
+
+    <button onclick="addPlayer()">Escalar</button> <!-- Chama a função addPlayer() ao clicar -->
+  </p>
+
+  <!-- Formulário para remover um jogador -->
+  <h2>Remover Jogador</h2>
+  <p>
+    <label for="numberToRemove">Número:</label>
+    <input type="number" id="numberToRemove"> <!-- Input para o número do jogador a ser removido -->
+
+    <button onclick="removePlayer()">Remover</button> <!-- Chama a função removePlayer() ao clicar -->
+  </p>
+
+  <!-- Lista onde os jogadores escalados serão exibidos -->
+  <h2>Time:</h2>
+  <ul id="team-list"></ul> <!-- Lista vazia, onde os jogadores escalados serão adicionados -->
+</body>
+</html>
